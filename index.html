@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StageCraft · Event Build Configurator</title>
+  <script type="module" crossorigin src="./assets/index-DZQdfGCH.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-C8OAn5cx.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <div class="logo">◆</div>
+      <div>
+        <div class="brand-name">StageCraft <span>Build Configurator</span></div>
+        <div class="project">Nova Summit 2026 · Proposal v3 <span class="pill-mini">prototype</span></div>
+      </div>
+    </div>
+    <div class="top-center">
+      <div class="seg" id="views">
+        <button data-view="overview" class="on">Overview</button>
+        <button data-view="audience">Back row</button>
+        <button data-view="foh">FOH desk</button>
+        <button data-view="stage">From stage</button>
+        <button data-view="side">Section</button>
+      </div>
+      <div class="seg" id="overlays">
+        <button data-overlay="none" class="on">Realistic</button>
+        <button data-overlay="audio">🔊 Audio reach</button>
+        <button data-overlay="screen">👁 Sightlines</button>
+      </div>
+    </div>
+    <label class="client-toggle"><input type="checkbox" id="clientMode" /><span class="sw"></span> Client view</label>
+  </header>
+
+  <main>
+    <aside class="left" id="left"></aside>
+
+    <section class="viewport" id="viewport">
+      <div id="legend" class="legend hidden"></div>
+      <div id="tooltip" class="tooltip hidden"></div>
+      <div class="hint">Drag to orbit · scroll to zoom · hover gear for details</div>
+      <div class="scenarios">
+        <div id="scenarioChips" class="chips"></div>
+        <button id="saveScenario" class="btn">＋ Save as option</button>
+        <button id="compareBtn" class="btn ghost" disabled>Compare options</button>
+      </div>
+      <div id="compare" class="compare hidden"></div>
+    </section>
+
+    <aside class="right" id="right"></aside>
+  </main>
+
+</body>
+</html>
